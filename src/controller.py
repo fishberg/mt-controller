@@ -18,7 +18,7 @@ class Racecar:
                                          queue_size=1)
 
 
-        def scan_callback(self, msg):
+    def scan_callback(self, msg):
         self.scan = msg.ranges
 
     def drive(self, speed, angle):
